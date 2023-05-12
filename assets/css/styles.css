@@ -1,0 +1,92 @@
+body{
+  margin: 0;
+  display: grid;
+
+  grid-template-columns: 218px 1fr 1fr 1fr 1fr ;
+  grid-template-rows: 50px 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "logo logo logo logo logo"
+  "sidebar main main main main"
+  "sidebar main main main main"
+  "sidebar main main main main"
+  "sidebar main main main main";
+
+
+    
+}
+
+.logo{
+  background-color: white;
+  grid-area: logo;
+
+  
+}
+
+
+aside{
+  background-color: chartreuse;
+  grid-area: sidebar;
+  
+}
+main{
+  padding: 20px;
+  background-color: rgb(243, 243, 243);
+  grid-area: main;
+  border:1px solid black;
+  grid-auto-flow: column;
+  height: 700px;
+  
+  
+  
+  
+}
+.video1{
+  width: 215px;
+  position: relative;
+  left:10px
+  
+  
+}
+.videos{
+  text-align: start;
+  
+
+}
+.videosmid{
+  position: relative;
+  top:-730px;
+  left:250px;
+}
+.videos3{
+  position: relative;
+  top:-1460px;
+  left:500px;
+}
+.videos4{
+  position: relative;
+  top:-2190px;
+  left:750px
+}
+.videos5{
+  position: relative;
+  top:-2921px;
+  left:1000px
+}
+div{
+  width: 210px;
+}
+.text{
+  position: relative;
+  left:5px
+}
+.subt{
+  position: relative;
+  left: 55px;
+  top: -45px;
+  
+}
+.title{
+  position: relative;
+  bottom: 50px;
+  left:50px
+}
