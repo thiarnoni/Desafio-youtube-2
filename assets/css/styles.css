@@ -1,92 +1,43 @@
 body{
-  margin: 0;
   display: grid;
-
-  grid-template-columns: 218px 1fr 1fr 1fr 1fr ;
-  grid-template-rows: 50px 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 100px repeat(4,300px);
   grid-template-areas: 
-  "logo logo logo logo logo"
+  "header header header header header"
   "sidebar main main main main"
   "sidebar main main main main"
   "sidebar main main main main"
   "sidebar main main main main";
-
-
-    
 }
-
-.logo{
-  background-color: white;
-  grid-area: logo;
-
-  
+.gallery{
+  background-color: #e2e2e2e2;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap:20px;
+  justify-content: space-between;
 }
-
-
+header{
+  grid-area:header;
+}
 aside{
-  background-color: chartreuse;
-  grid-area: sidebar;
-  
+ grid-area:sidebar;
 }
 main{
-  padding: 20px;
-  background-color: rgb(243, 243, 243);
-  grid-area: main;
-  border:1px solid black;
-  grid-auto-flow: column;
-  height: 700px;
-  
-  
-  
-  
+  grid-area:main;
 }
-.video1{
-  width: 215px;
+.sub{
   position: relative;
-  left:10px
-  
+  left: 45px;
+  bottom:40px;
+  text-transform: uppercase;
+  font-weight: 80;
   
 }
-.videos{
-  text-align: start;
-  
+.logo{
+  position: relative;
 
 }
-.videosmid{
-  position: relative;
-  top:-730px;
-  left:250px;
-}
-.videos3{
-  position: relative;
-  top:-1460px;
-  left:500px;
-}
-.videos4{
-  position: relative;
-  top:-2190px;
-  left:750px
-}
-.videos5{
-  position: relative;
-  top:-2921px;
-  left:1000px
-}
-div{
-  width: 210px;
-}
-.text{
-  position: relative;
-  left:5px
-}
-.subt{
-  position: relative;
-  left: 55px;
-  top: -45px;
-  
-}
-.title{
-  position: relative;
-  bottom: 50px;
-  left:50px
+.videos{
+  padding: -30px;
 }
